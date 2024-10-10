@@ -6,13 +6,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/eletero"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/gep_heart1"
+            android:background="@drawable/heart2"
+            />
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/gep_heart2"
+            android:background="@drawable/heart2"
+            />
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/gep_heart3"
+            android:background="@drawable/heart2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gép"
+            android:id="@+id/gep_EletSzoveg"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" /"
+            android:id="@+id/csikokok"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Játékos"
+            android:id="@+id/ember_EletSzoveg"
+            android:textSize="25sp"/>
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/ember_heart1"
+            android:background="@drawable/heart2"
+            />
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/ember_heart2"
+            android:background="@drawable/heart2"
+            />
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/ember_heart3"
+            android:background="@drawable/heart2"
+            />
+    </LinearLayout>
     <ImageView
         android:layout_width="500px"
         android:layout_height="500px"
         android:id="@+id/ember_Valasztas"
         android:background="@drawable/rock"
-        android:textSize="25sp"
         android:layout_centerInParent="true"
+        android:layout_below="@+id/eletero"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -45,36 +106,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:id="@+id/LinearLayoutText"
-        android:layout_below="@+id/gep_Kiiras"
-        android:layout_centerInParent="true">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Eredmény: Ember: "
-            android:id="@+id/eredmeny"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0 / "
-            android:id="@+id/ember_szam"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Computer: "
-            android:id="@+id/computer"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/gep_szam"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
         android:id="@+id/LinearLayoutButton"
-        android:layout_below="@+id/LinearLayoutText"
+        android:layout_below="@+id/gep_Kiiras"
         android:layout_centerInParent="true">
         <ImageButton
             android:layout_width="300px"
@@ -101,5 +134,12 @@
             android:layout_centerInParent="true"
             />
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Döntetlenek száma: 0"
+        android:id="@+id/dontetlen"
+        android:layout_below="@+id/LinearLayoutButton"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>
